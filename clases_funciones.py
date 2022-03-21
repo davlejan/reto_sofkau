@@ -83,4 +83,81 @@ class pregunta:
                               #en caso de no se run dato valido pido nuevamente la respuesta            
                               else: 
                                           system("clear")
-                                          print('Ingrese un dato valido')           
+                                          print('Ingrese un dato valido')    
+
+#Creo una funcion la cual dependiendo de la ronda (nivel) en que este me devuelve la categoria adecuada
+
+def nivel_categoria(nivel):
+                  if nivel == 0:
+                              return 'deporte'
+                  if nivel == 1:
+                              return 'cultura general'
+                  if nivel == 2:
+                              return 'geografia'
+                  if nivel == 3:
+                              return 'historia'
+                  if nivel == 4:
+                              return 'matematicas'  
+
+#creo una funcion que me permita llevar la puntuacion dependiendo de la ronda (doble puntos  cada ronda)
+
+def puntuacion(ronda_actual,puntuacion_actual=0):
+                  if ronda_actual == 0:
+                              return puntuacion_actual + 1
+                  if ronda_actual == 1:
+                              return puntuacion_actual + 2
+                  if ronda_actual == 2:
+                              return puntuacion_actual + 4
+                  if ronda_actual == 3:
+                              return puntuacion_actual + 8
+                  if ronda_actual == 4:
+                              return puntuacion_actual + 16     
+
+#Creo una funcion para pedir el nombre del jugador (alivianar un poco la funcion ronda)
+
+def pedir_nombre_usuario():
+            system('clear')
+            print('Por favor digita tu nombre de usuario')
+            return input()
+
+#Creo la clase datos_de personaje para manejar los datos del jugador y llevarlos a la base de datos historica
+
+class datos_personaje:
+            def __init__(self,nombre_personaje="",puntuacion=0):
+                        self.nombre_personaje = nombre_personaje
+                        self.puntuacion = puntuacion
+
+            #Creo metodo para mantener el puntaje actualizado      
+            def incrementar_puntuacion(self,nueva_puntuacion):
+                        self.puntuacion = self.puntuacion + nueva_puntuacion
+
+            #Creo una funcion para guardar en el historial el puntaje del jugador (en los casos requeridos)
+            def guardar_historial(self,url):
+                        #abro el archivo y lo trato para poder manipularlo facilmente con python
+                        abrir_archivo = open(url)
+                        leer_archivo = abrir_archivo.read()
+                        historial_js = json.loads(leer_archivo)
+                        #Agrego a la lista los datos del usuario 
+                        historial_js.append(
+                        {
+                              "ranking": len(historial_js)+1,
+                              "nombre_usuario": self.nombre_personaje,
+                              "puntuacion": self.puntuacion
+
+                        }
+                        )
+                        # con un algoritmo de ordenamiento burbuja pongo en el lugar que corresponde segun la puntuacion
+                        n = len(historial_js)
+                        for i in range(n):
+                              for j in range(0,n-i-1):
+                                    if historial_js[j]["puntuacion"] < historial_js[j+1]["puntuacion"]:
+                                          historial_js[j],historial_js[j+1] = historial_js[j+1],historial_js[j]
+                                          historial_js[j]["ranking"], historial_js[j+1]["ranking"] = historial_js[j+1]["ranking"],historial_js[j ]["ranking"]
+
+                        #abro nuevamente el archivo para escribir los nuevos datos (con los nuevos ya agregados y organizados)
+                        with open(url,'w') as j:
+                              json.dump(historial_js,j)
+
+
+
+
