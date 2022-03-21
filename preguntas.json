@@ -1,0 +1,232 @@
+[
+    {
+        "id" : 1,
+        "categoria" : "deporte",
+        "pregunta" : "¿Que jugador Colombiano juega actualmente en el club ingles Liverpool FC?",
+        "respuesta" : "Luiz Dias",
+        "trampa1" : "Luiz Fernando Muriel",
+        "trampa2" : "Luis Sinisterra",
+        "trampa3" : "Steven Alzate"
+    },
+    {
+        "id" : 2,
+        "categoria" : "deporte",
+        "pregunta" : "¿Que equipo colombiano quedo campeon de la copa libertadores en el año 2004?",
+        "respuesta" : "Once Caldas",
+        "trampa1" : "Atetico Nacional",
+        "trampa2" : "America de Cali",
+        "trampa3" : "Millonarios FC"
+    },
+    {
+        "id" : 3,
+        "categoria" : "deporte",
+        "pregunta" : "¿ Cual es el nombre del unico colombiano en quedar primero en el tour de francia?",
+        "respuesta" : "Edgan Bernal",
+        "trampa1" : "Nairo Quintana",
+        "trampa2" : "Rigoberto Uran",
+        "trampa3" : "Esteban Chavez"
+    },
+    {
+        "id" : 4,
+        "categoria" : "deporte",
+        "pregunta" : "¿Cual es el Colombiano con mas medallan olimpicas ?",
+        "respuesta" : "Mariana Pajon",
+        "trampa1" : "Isabel Urrutia",
+        "trampa2" : "Óscar Figueroa",
+        "trampa3" : "Caterine Ibargüen"
+    },
+    {
+        "id" : 5,
+        "categoria" :"deporte",
+        "pregunta" : "¿ Cual es el jugador con mas goles portando la camisa de la seleccion Colombia",
+        "respuesta" : "Falcao Garcia",
+        "trampa1" : "Tino Asprilla",
+        "trampa2" : " Victor Aristizabal",
+        "trampa3" : "El pibe valderrama"
+    },
+
+    {
+        "id" : 6,
+        "categoria" : "cultura general",
+        "pregunta" : "¿Cuantos estados tiene Estados Unidos?",
+        "respuesta" : "50 Estados",
+        "trampa1" : "49 Estados",
+        "trampa2" : "52 Estados",
+        "trampa3" : "100 Estados"
+    },
+    {
+        "id" : 7,
+        "categoria" : "cultura general",
+        "pregunta" : "¿En que año llego el hombre a la luna?",
+        "respuesta" : "1969",
+        "trampa1" : "1987",
+        "trampa2" : "1956",
+        "trampa3" : "1945"
+    },
+    {
+        "id" : 8,
+        "categoria" : "cultura general",
+        "pregunta" : "¿ Cual no es un color primario?",
+        "respuesta" : "verde",
+        "trampa1" : "amarillo",
+        "trampa2" : "azul",
+        "trampa3" : "rojo"
+    },
+    {
+        "id" : 9,
+        "categoria" : "cultura general",
+        "pregunta" : "¿Quien escribio Don quijote de la mancha ?",
+        "respuesta" : "Miguel de cervantes",
+        "trampa1" : "Edgar alan Poe",
+        "trampa2" : "Fernando Vallejo",
+        "trampa3" : "Gabriel Garcia Marquez"
+    },
+    {
+        "id" : 10,
+        "categoria" :"cultura general",
+        "pregunta" : "¿ Cual es el disco mas vendido de la historia",
+        "respuesta" : "Thriller de Michael Jackson",
+        "trampa1" : "1 de the Beatles",
+        "trampa2" : " black in black de AC/DC",
+        "trampa3" : "kill em all de Metallica"
+    },
+
+    {
+        "id" : 11,
+        "categoria" : "geografia",
+        "pregunta" : "¿Cual es el oceano mas grande del mundo?",
+        "respuesta" : "oceano pacifico",
+        "trampa1" : "oceano atlantico",
+        "trampa2" : "oceano artico",
+        "trampa3" : "oceano indico"
+    },
+    {
+        "id" : 12,
+        "categoria" : "geografia",
+        "pregunta" : "¿cual es el pais con mayor poblacion del mundo?",
+        "respuesta" : "China",
+        "trampa1" : "Rusia",
+        "trampa2" : "Japon",
+        "trampa3" : "India"
+    },
+    {
+        "id" : 13,
+        "categoria" : "geografia",
+        "pregunta" : "¿ Cual es la isla mas grande del mundo?",
+        "respuesta" : "Groenlandia",
+        "trampa1" : "Nueva Zelanda",
+        "trampa2" : "Madagascar",
+        "trampa3" : "San Andres"
+    },
+    {
+        "id" : 14,
+        "categoria" : "geografia",
+        "pregunta" : "¿Cual es el rio mas largo del mundo ?",
+        "respuesta" : "rio Amazonas",
+        "trampa1" : "rio Nilo",
+        "trampa2" : "Missisipi",
+        "trampa3" : "el Reins"
+    },
+    {
+        "id" : 15,
+        "categoria" :"geografia",
+        "pregunta" : "¿ Cual es el pais mas grande del mundo",
+        "respuesta" : "Rusia",
+        "trampa1" : "China",
+        "trampa2" : " Estados Unidos",
+        "trampa3" : "Colombia"
+    }
+    ,
+
+    {
+        "id" : 16,
+        "categoria" : "historia",
+        "pregunta" : "¿Cuantos años duro la primera guerra mundial?",
+        "respuesta" : "de 1914 a 1918",
+        "trampa1" : "de 1915 a 1920",
+        "trampa2" : "de 1905 a 1914",
+        "trampa3" : "de 1890 a 1904"
+    },
+    {
+        "id" : 17,
+        "categoria" : "historia",
+        "pregunta" : "¿Cuantos años duro la segunda guerra mundial?",
+        "respuesta" : "de 1939 a 1945",
+        "trampa1" : "de 1938 a 1945",
+        "trampa2" : "de 1945 a 1949",
+        "trampa3" : "de 1935 a 1944"
+    },
+    {
+        "id" : 18,
+        "categoria" : "historia",
+        "pregunta" : "¿ cual fue el primer pais en aprobar el sufragio (voto) femenino?",
+        "respuesta" : "Nueva Zelanda",
+        "trampa1" : "Australia",
+        "trampa2" : "Inglaterra",
+        "trampa3" : "Estados Unidos"
+    },
+    {
+        "id" : 19,
+        "categoria" : "historia",
+        "pregunta" : "¿En que guerra combatio Juana de arco ?",
+        "respuesta" : "la guerra de los 100 años",
+        "trampa1" : "las guerras de la cruzada",
+        "trampa2" : "la guerra bicentenaria",
+        "trampa3" : "la guerra del donbas"
+    },
+    {
+        "id" : 20,
+        "categoria" :"historia",
+        "pregunta" : "¿ En que año se dio la guerra de los mil dia?",
+        "respuesta" : "entre 1899 y 1902",
+        "trampa1" : "entre 1910 y 1913",
+        "trampa2" : " entre 1888 y 1901",
+        "trampa3" : "entre 1801 y 1804"
+    } ,
+
+    {
+        "id" : 21,
+        "categoria" : "matematicas",
+        "pregunta" : "¿Cual es el numero que sigue despues del 3,14.. en el numero pi?",
+        "respuesta" : "1592...",
+        "trampa1" : "1625...",
+        "trampa2" : "1414...",
+        "trampa3" : "0000..."
+    },
+    {
+        "id" : 22,
+        "categoria" : "matematicas",
+        "pregunta" : "¿de donde viene el sistema sexagesimal que usamos actualmente?",
+        "respuesta" : "Babilonia",
+        "trampa1" : "Grecia",
+        "trampa2" : "Roma",
+        "trampa3" : "Egipto"
+    },
+    {
+        "id" : 23,
+        "categoria" : "matematicas",
+        "pregunta" : "¿ que teorema plantea que la derivación e integración de una función son operaciones inversas?",
+        "respuesta" : "Teorema del cálculo",
+        "trampa1" : "Teorema de la aritmética",
+        "trampa2" : "Teorema de Rolle",
+        "trampa3" : "Teorema de Bayes"
+    },
+    {
+        "id" : 24,
+        "categoria" : "matematicas",
+        "pregunta" : "¿Cual es la rama de la matematica que permitio el desarrollo de los circuitos modernos?",
+        "respuesta" : "algebra booleana",
+        "trampa1" : "aritmetica",
+        "trampa2" : "geometria",
+        "trampa3" : "calculo"
+    },
+    {
+        "id" : 25,
+        "categoria" :"matematicas",
+        "pregunta" : "¿ como se le llama a la serie en la cual cada numero resulta de sumar los dos anteriores?",
+        "respuesta" : "serie de fibonacci",
+        "trampa1" : "serie armonica",
+        "trampa2" : " serie de Euler",
+        "trampa3" : "serie alternada"
+    }
+]
