@@ -159,5 +159,55 @@ class datos_personaje:
                               json.dump(historial_js,j)
 
 
+#Creo mi funcion ronda la cual se ecarga de todo lo referente a las diferentes etapas del juego
+
+def ronda(nombre_usuario):
+            jugador = datos_personaje(nombre_usuario)
+            #Creo ciclo for que se encargara de las 5 rondas del juego
+            for i in range(5):
+                        system("clear")
+                        print(nivel_categoria(i))
+                        #desde mi clase pregunta llamo una pregunta acorde al nivel solicitado enviando Url y categoria
+                        pregunta.cargar_pregunta('preguntas.json',nivel_categoria(i))
+                        #con mi funcion dar_pregunta le entrengo al usuario la pregunta y las posibles respuestas
+                        #adicional evalua si es correcta 
+                        acierto=pregunta.dar_pregunta()
+                        if acierto == True:
+                                    #al acertar la prgunta incremento la puntuacion del jugador
+                                    jugador.incrementar_puntuacion(puntuacion(i,jugador.puntuacion))  
+                                    system("clear")
+                                    #Pregunto al usuario si desea continuar con el juego 
+                                    while True:
+                                                #condicional añadido para terminar el juego al responder la ultima pregunta
+                                                if i == 4:
+                                                      system("clear")
+                                                      #guarda el historial del jugador al ganar el juego
+                                                      jugador.guardar_historial('historial.json')
+                                                      print('Ganaste! (oprime enter para continuar)')
+                                                      input()
+                                                      #me regresa al menu principal
+                                                      pagina_principal()
+                                                #parte donde evalua si el usuario desea continuar
+                                                print(f'respuesta correcta,¿Desea continuar? \n {nombre_usuario} tu puntuacion actual es {jugador.puntuacion} \n Y para continuar \n N para salvar puntuacion')
+                                                respuesta_continuar = input().upper()
+                                                if respuesta_continuar == 'Y':
+                                                            break
+                                                if respuesta_continuar == 'N':
+                                                            #si el usuario no desea continuar guarda los datos en el historico
+                                                            jugador.guardar_historial('historial.json')
+                                                            #me regresa al menu principal
+                                                            pagina_principal()
+
+                                                else:
+                                                            system("clear")
+                                                            print('ingrese un dato valido')
+                        #si el usuario no responde de manera acertada lo devuelve al menu principal y no guarda el historial                                  
+                        if acierto == False:
+                                    system("clear")
+                                    print('Respondio incorrectamente, sus puntos ganados no se guardaran en el historial (presiona enter para continuar)')
+                                    input()
+                                    pagina_principal()
+
+
 
 
