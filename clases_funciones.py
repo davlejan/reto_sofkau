@@ -239,3 +239,7 @@ def pagina_principal():
                                     system("clear")
                                     print('seleccione una de las opciones correctamente')
 
+if __name__ == "__main__":
+
+    pregunta = pregunta()
+    pagina_principal()
