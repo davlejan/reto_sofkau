@@ -155,6 +155,7 @@ class datos_personaje:
                                           historial_js[j]["ranking"], historial_js[j+1]["ranking"] = historial_js[j+1]["ranking"],historial_js[j ]["ranking"]
 
                         #abro nuevamente el archivo para escribir los nuevos datos (con los nuevos ya agregados y organizados)
+                        print(historial_js)
                         with open(url,'w') as j:
                               json.dump(historial_js,j)
 
@@ -208,6 +209,33 @@ def ronda(nombre_usuario):
                                     input()
                                     pagina_principal()
 
+#Creo la funcion que gestiona el menu del juego 
 
-
+def pagina_principal():
+            system("clear")
+            
+            while True:
+                        print('Bienvenido al juego Preguntas y respuestas \n Presione 1 para comenzar un juego nuevo \n Presione 2 para ver historial de puntuacion \n presione 3 para salir')
+                        seleccion_usuario = input()
+                        #opcion para inicializar el juego
+                        if seleccion_usuario == '1':
+                                    ronda(pedir_nombre_usuario())
+                        #lee el historial y lo imprime en consola
+                        if seleccion_usuario == '2':
+                                    system("clear")
+                                    abrir_archivo = open('historial.json')
+                                    leer_archivo = abrir_archivo.read()
+                                    historial_js = json.loads(leer_archivo)
+                                    print(len(historial_js))
+                                    for i in range(len(historial_js)):
+                                                print(f'Ranking:{historial_js[i]["ranking"]} jugador:{historial_js[i]["nombre_usuario"]} Puntuacion:{historial_js[i]["puntuacion"]} ')
+                                    print('Presione Enter para Salir')
+                                    input()
+                                    pagina_principal()
+                        #forza al sistema a salir
+                        if seleccion_usuario == '3':
+                                    quit()
+                        else:
+                                    system("clear")
+                                    print('seleccione una de las opciones correctamente')
 
